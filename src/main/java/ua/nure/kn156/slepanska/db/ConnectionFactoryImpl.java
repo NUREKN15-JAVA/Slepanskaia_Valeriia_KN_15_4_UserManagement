@@ -32,5 +32,13 @@ public class ConnectionFactoryImpl implements ConnectionFactory {
 			throw new DatabaseException(e);
 		}
 	}
-	
+	/*
+	 * public ConnectionFactoryImpl(Properties properties) { user =
+	 * properties.getProperty("connection.user"); password =
+	 * properties.getProperty("connection.password"); url =
+	 * properties.getProperty("connection.url"); driver =
+	 * properties.getProperty("connection.driver");
+	 * 
+	 * }
+	 */
 }
