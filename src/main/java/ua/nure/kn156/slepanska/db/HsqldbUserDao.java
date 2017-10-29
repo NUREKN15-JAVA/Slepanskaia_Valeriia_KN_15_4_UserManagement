@@ -15,7 +15,7 @@ import ua.nure.kn156.slepanska.User;
 
 /**
  * 
- * @author Валерия
+ * @author Valeriia Slepanska KN-15-6
  *
  */
 class HsqldbUserDao implements UserDAO {
@@ -90,6 +90,8 @@ class HsqldbUserDao implements UserDAO {
 			statement.setDate(3, new Date(user.getDateOfBirth().getTime()));
 			statement.setLong(4, user.getId());
 			statement.executeUpdate();
+			statement.close();
+			connection.close();
 		} catch (DatabaseException e) {
 			throw e;
 		} catch (SQLException e) {
@@ -104,6 +106,8 @@ class HsqldbUserDao implements UserDAO {
 			PreparedStatement statement = connection.prepareStatement(DELETE_QUERY);
 			statement.setLong(1, user.getId());
 			statement.executeUpdate();
+			statement.close();
+			connection.close();
 		} catch (DatabaseException e) {
 			throw e;
 		} catch (SQLException e) {
@@ -124,7 +128,7 @@ class HsqldbUserDao implements UserDAO {
 					user.setFirstName(resultSet.getString(2));
 					user.setLastName(resultSet.getString(3));
 					user.setDateOfBirth(resultSet.getDate(4));
-
+					
 				}
 
 			}

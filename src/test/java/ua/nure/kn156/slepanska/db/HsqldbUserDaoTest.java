@@ -17,7 +17,7 @@ import ua.nure.kn156.slepanska.db.HsqldbUserDao;
 
 /**
  * 
- * @author Валерия
+ * @author author Valeriia Slepanska KN-15-6
  *
  */
 public class HsqldbUserDaoTest extends DatabaseTestCase {

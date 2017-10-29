@@ -7,7 +7,7 @@ import ua.nure.kn156.slepanska.User;
 /**
  * Interface for User class which implements DAO pattern with all CRUD opps
  * 
- * @author Валерия
+ * @author Valeriia Slepanska KN-15-6
  *
  */
 

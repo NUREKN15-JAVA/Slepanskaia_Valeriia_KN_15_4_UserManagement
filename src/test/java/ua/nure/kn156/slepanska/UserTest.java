@@ -8,7 +8,7 @@ import ua.nure.kn156.slepanska.User;
 
 /**
  * 
- * @author Валерия
+ * @ author Valeriia Slepanska KN-15-6
  *
  */
 public class UserTest extends TestCase {

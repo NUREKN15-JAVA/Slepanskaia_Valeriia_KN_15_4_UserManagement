@@ -5,7 +5,7 @@ import java.util.Date;
 
 /**
  * 
- * @author Валерия
+ * @author Valeriia Slepanska KN-15-6
  *
  */
 public class User {
