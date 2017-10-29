@@ -1,13 +1,18 @@
-package com.nixsolutions.usermanagement;
+package ua.nure.kn156.slepanska;
 
 import java.util.Calendar;
 import java.util.Date;
 
-import org.junit.Test;
-
 import junit.framework.TestCase;
+import ua.nure.kn156.slepanska.User;
 
+/**
+ * 
+ * @author Валерия
+ *
+ */
 public class UserTest extends TestCase {
+
 	private static final int AGE_OF_PERSON = 19;
 	private static final int DAY_OF_BIRTH = 12;
 	private static final int YEAR_OF_BIRTH = 1998;

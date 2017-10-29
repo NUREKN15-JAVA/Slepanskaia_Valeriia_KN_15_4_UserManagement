@@ -1,12 +1,29 @@
-package com.nixsolutions.usermanagement;
+package ua.nure.kn156.slepanska;
 
 import java.util.Calendar;
 import java.util.Date;
 
+/**
+ * 
+ * @author Валерия
+ *
+ */
 public class User {
 	private Long id;
 	private String firstName;
 	private String lastName;
+	private Date dateOfBirth;
+
+	public User(User user) {
+		id = user.getId();
+		firstName = user.getFirstName();
+		lastName = user.getLastName();
+		dateOfBirth = user.getDateOfBirth();
+	}
+
+	public User() {
+
+	}
 
 	public Long getId() {
 		return id;
@@ -40,8 +57,6 @@ public class User {
 		this.dateOfBirth = dateOfBirth;
 	}
 
-	private Date dateOfBirth;
-
 	public String getFullName() {
 		if (getLastName() == null || getFirstName() == null) {
 			throw new IllegalArgumentException("Please,fill all the fields of the form");
@@ -52,7 +67,6 @@ public class User {
 
 	public int getAge() {
 		// TODO Auto-generated method stub
-
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTime(new Date());
 		int currentYear = calendar.get(Calendar.YEAR);
