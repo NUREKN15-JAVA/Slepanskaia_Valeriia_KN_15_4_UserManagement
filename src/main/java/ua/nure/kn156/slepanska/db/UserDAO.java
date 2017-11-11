@@ -14,7 +14,7 @@ import ua.nure.kn156.slepanska.User;
 public interface UserDAO {
 	/**
 	 * Add user into DB users table and get new user`s id from db
-	 * 
+	 *
 	 * @param user
 	 *            all fields of user must be non-null except id field
 	 * @return copy of user from db with id auto created
@@ -28,8 +28,8 @@ public interface UserDAO {
 	 * 
 	 * @param id
 	 *            of user which must be found by method
-	 * @return user of specified id.In case if there is no user with specified
-	 *         id, the method return null
+	 * @return user of specified id.In case if there is no user with specified id,
+	 *         the method return null
 	 * @throws DatabaseException
 	 *             in case of any error with db
 	 */
@@ -37,7 +37,7 @@ public interface UserDAO {
 
 	/**
 	 * Update entries in the users table
-	 * 
+	 *
 	 * @param entries
 	 *            of user which method must update
 	 * @throws DatabaseException
@@ -58,9 +58,9 @@ public interface UserDAO {
 
 	/**
 	 * Find all of users` entities in the db
-	 * 
-	 * @return collection of all users`entities in the db. If it`s empty, the
-	 *         method return empty list
+	 *
+	 * @return collection of all users`entities in the db. If it`s empty, the method
+	 *         return empty list
 	 * @throws DatabaseException
 	 *             in case of any error with db
 	 */
@@ -70,7 +70,7 @@ public interface UserDAO {
 	/**
 	 * Set of connection configuration parameters that has been defined by an
 	 * administrator
-	 * 
+	 *
 	 * @param connectionFactory
 	 */
 	void setConnectionFactory(ConnectionFactory connectionFactory);

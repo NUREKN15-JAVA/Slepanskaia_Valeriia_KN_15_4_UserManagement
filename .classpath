@@ -5,8 +5,13 @@
 	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="src" path="src/test/resources"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="lib" path="lib/dbunit-2.1.jar"/>
-	<classpathentry kind="lib" path="lib/hsqldb-1.8.0.1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry kind="lib" path="C:/Users/Валерия/Downloads/jfcunit-2.08 (2).jar"/>
+	<classpathentry kind="lib" path="C:/Users/Валерия/Downloads/mockobjects-core-0.09 (1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/Валерия/Downloads/regexp-1.3 (1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/Валерия/Downloads/hsqldb-1.8.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Валерия/Downloads/dbunit-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Валерия/Downloads/mockobjects-core-0.09 (1) – копія.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Валерия/Downloads/jfcunit-2.08 (2) – копія.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
