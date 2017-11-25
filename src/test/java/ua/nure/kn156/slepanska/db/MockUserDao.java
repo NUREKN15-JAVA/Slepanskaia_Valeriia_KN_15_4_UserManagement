@@ -52,9 +52,5 @@ public class MockUserDao implements UserDAO {
 		// TODO Auto-generated method stub
 
 	}
-	/*
-	 public Collection find(String firstName, String lastName) throws DatabaseException {
-	        throw new UnsupportedOperationException();
-	    }
-*/
+
 }

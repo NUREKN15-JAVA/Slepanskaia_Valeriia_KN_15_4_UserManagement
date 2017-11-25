@@ -3,43 +3,57 @@ package ua.nure.kn156.slepanska;
 import java.util.Calendar;
 import java.util.Date;
 
-
-
 import junit.framework.TestCase;
+import ua.nure.kn156.slepanska.User;
 
 public class UserTest extends TestCase {
-private static final int AGE_OF_PERSON = 19;
-private static final int DAY_OF_BIRTH = 12;
-private static final int YEAR_OF_BIRTH = 1998;
-private User user;
-private Date dateOfBirth;
+	private static final int AGE = 19;
+	private User user;
+	private Date date;
 
-protected void setUp() throws Exception {
-super.setUp();
-user = new User();
-Calendar calendar = Calendar.getInstance();
-calendar.set(YEAR_OF_BIRTH, Calendar.MAY, DAY_OF_BIRTH);
-dateOfBirth = calendar.getTime();
-}
+	@Override
+	protected void setUp() throws Exception {
 
-public void testGetFullName() {
-user.setFirstName("Lera");
-user.setLastName("Slepanskaia");
-assertEquals("Slepanskaia, Lera", user.getFullName());
-}
+		super.setUp();
+		user = new User();
+		Calendar calendar = Calendar.getInstance();
+		calendar.set(1998, Calendar.JANUARY, 28);
+		date = calendar.getTime();
+	}
 
-public void testGetAge() {
-user.setDateOfBirth(dateOfBirth);
-assertEquals(AGE_OF_PERSON, user.getAge());
-}
+	public void testGetFullName() {
+		user.setFirstName("Kseniia");
+		user.setLastName("Hondak");
+		assertEquals("Hondak,Kseniia", user.getFullName());
+	}
 
-public void testGetFullNameThrowException() {
-user.setLastName(null);
-try {
-user.getFullName();
-fail("Expected IllegalArgumentException");
-} catch (IllegalArgumentException e) {
-assertEquals(e.getMessage(), "Please,fill all the fields of the form");
-}
-}
+	public void testLastNameIsNull() {
+		user.setLastName("Hondak");
+		try {
+			user.getFullName();
+			fail("Should have thrown an exception");
+
+		} catch (IllegalArgumentException e) {
+			System.out.println("lastName is NULL");
+		}
+
+	}
+
+	public void testFirstNameIsNull() {
+		user.setFirstName("Kseniia");
+		try {
+			user.getFullName();
+			fail("Should have thrown an exception");
+
+		} catch (IllegalArgumentException e) {
+			System.out.println("firstName is NULL");
+		}
+
+	}
+
+	public void testGetAge() {
+		user.setDateOfBirth(date);
+		assertEquals(AGE, user.getAge());
+	}
+
 }
