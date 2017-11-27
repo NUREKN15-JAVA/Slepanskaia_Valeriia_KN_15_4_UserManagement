@@ -17,18 +17,18 @@ public class UserTest extends TestCase {
 		super.setUp();
 		user = new User();
 		Calendar calendar = Calendar.getInstance();
-		calendar.set(1998, Calendar.JANUARY, 28);
+		calendar.set(1998, Calendar.MAY, 12);
 		date = calendar.getTime();
 	}
 
 	public void testGetFullName() {
-		user.setFirstName("Kseniia");
-		user.setLastName("Hondak");
-		assertEquals("Hondak,Kseniia", user.getFullName());
+		user.setFirstName("Valeriia");
+		user.setLastName("Slepanska");
+		assertEquals("Slepanska,Valeriia", user.getFullName());
 	}
 
 	public void testLastNameIsNull() {
-		user.setLastName("Hondak");
+		user.setLastName("Slepanska");
 		try {
 			user.getFullName();
 			fail("Should have thrown an exception");
@@ -40,7 +40,7 @@ public class UserTest extends TestCase {
 	}
 
 	public void testFirstNameIsNull() {
-		user.setFirstName("Kseniia");
+		user.setFirstName("Valeriia");
 		try {
 			user.getFullName();
 			fail("Should have thrown an exception");

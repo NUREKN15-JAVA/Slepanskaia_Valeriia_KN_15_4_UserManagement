@@ -31,9 +31,8 @@ public User(Long id, String firstName, String lastName, Date date ){
 		this.lastName=lastName;
 		this.dateOfBirth=date;
 }
-	public User(long id2, String firstName2, String lastName2, Date date) {
-		// TODO Auto-generated constructor stub
-	}
+	
+
 	public Long getId() {
 		return id;
 	}
