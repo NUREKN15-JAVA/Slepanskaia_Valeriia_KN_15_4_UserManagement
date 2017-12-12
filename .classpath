@@ -7,8 +7,7 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-logging.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/dbunit-2.1 (3).jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/hsqldb-1.8.0.1 (4).jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/JADE-all-3.4.zip"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jakarta-oro-2.0.8.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jdom.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jfcunit-2.08 (3).jar"/>
@@ -22,5 +21,13 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/servlet-api.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/standard-1.1.1 (3).jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/http.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/iiop.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jade.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jadeTools.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/MeetingScheduler.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/dbunit-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Валерия/Downloads/hsqldb-1.8.0.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

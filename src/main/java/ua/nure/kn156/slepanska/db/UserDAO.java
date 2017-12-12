@@ -5,7 +5,7 @@ import java.util.Collection;
 import ua.nure.kn156.slepanska.User;
 /**
  * Interface for User class which implement DAO pattern with all CRUD opps
- * @author Ksenia
+ * 
  *
  */
 
@@ -43,7 +43,7 @@ public interface UserDAO {
 	 * @param a collection of all users from db
 	 * @throws DatabaseException in case of any error with db
 	 */
-	Collection<User>findAll()throws DatabaseException;
+	Collection findAll()throws DatabaseException;
 	
 	/**
      * Set the connection factory.
@@ -51,5 +51,9 @@ public interface UserDAO {
      * @param connectionFactory is used for connection factory
      */
 	void setConnectionFactory(ConnectionFactory connectionFactory);
+
+
+        Collection find(String firstName,String lastName )throws DatabaseException;
+
 
 }

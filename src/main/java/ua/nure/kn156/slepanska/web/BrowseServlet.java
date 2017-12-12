@@ -53,9 +53,11 @@ public class BrowseServlet extends HttpServlet {
 		String idS =req.getParameter("id");
 		if (idS == null || idS.trim().length()==0) {
             req.setAttribute("error", "Choose user");
+            
             req.getRequestDispatcher("/browse.jsp").forward(req, resp);
             return;
         }
+	
         try {
             User user = DaoFactory.getInstance().getUserDao().find(new Long(idS));
             DaoFactory.getInstance().getUserDao().delete(user);
